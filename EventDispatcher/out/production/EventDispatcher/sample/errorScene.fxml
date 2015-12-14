@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="609.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ErrorSceneController">
+   <children>
+      <ImageView fitHeight="208.0" fitWidth="225.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@error.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="24.0" prefHeight="62.0" prefWidth="383.0" text="Whooooops! " textAlignment="CENTER" textFill="#c61616" wrapText="true">
+         <font>
+            <Font name="Impact" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="86.0" prefHeight="67.0" prefWidth="374.0" text="Looks like something unexpected has happened!" wrapText="true">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label id="errorField" fx:id="errorField" layoutX="204.0" layoutY="153.0" prefHeight="67.0" prefWidth="374.0" text="[ERROR TEXT]" textFill="#23904b" wrapText="true">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Button id="betterButton" fx:id="betterButton" layoutX="385.0" layoutY="226.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="208.0" text="I'll be better next time">
+         <font>
+            <Font name="Audiowide" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

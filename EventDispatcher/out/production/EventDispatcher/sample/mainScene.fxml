@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainAnchorPane" fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainSceneController">
+   <children>
+      <DatePicker id="datePicker" fx:id="datePicker" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="365.0" promptText="Choose date" showWeekNumbers="true" />
+      <ListView id="listView" fx:id="listView" layoutX="14.0" layoutY="54.0" prefHeight="426.0" prefWidth="365.0">
+         <contextMenu>
+            <ContextMenu id="contextMenu" fx:id="contextMenu">
+               <items>
+                  <MenuItem id="addButton" fx:id="addButton" mnemonicParsing="false" text="Add event">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="DIGIT0" control="UP" meta="UP" shift="ANY" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem id="removeButton" fx:id="removeButton" mnemonicParsing="false" text="Remove event">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="DIGIT1" control="UP" meta="UP" shift="ANY" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem id="editButton" fx:id="editButton" mnemonicParsing="false" text="Edit event">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="DIGIT2" control="UP" meta="UP" shift="ANY" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="clearButton" disable="true" mnemonicParsing="false" text="Clear">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+   </children>
+</AnchorPane>
